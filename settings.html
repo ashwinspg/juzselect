@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Budget Manager Options</title>
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery-ui.js"></script>
+        <script src="js/settings.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/settings.css" />
+        <link rel="stylesheet" type="text/css" href="css/common.css" />
+        <link rel="stylesheet" type="text/css" href="css/content.css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery-ui.css" />
+    </head>
+    <body>
+        <div class="builder-header">Extension settings</div>
+        <div class="main-container">
+            <div class="builder">
+                <div id="juzselect-settings">
+                    <div class="settings-container">
+                        <div class="settings">
+                            <div class="learnWord">
+                                <div>Learn a word</div>
+                                <div class="description margin-top--small">(This feature is powered by Chrome extension Rich Notifications API. It shows a random word with its meaning in the user's system tray. When this option is enabled, the user can customize the interval period for showing the notification.)</div>
+                            </div>
+                            <div class="notify">
+                                <div class="notifyEnable">
+                                    <label class="switch">
+                                    <input type="checkbox" id="notifyDurationEnable" />
+                                    <span class="slider round"></span>
+                                    </label>
+                                </div>
+                                <div id="notifyDurationContainer" class="margin-top--medium">
+                                    <div class="notifyDuration">
+                                        <input id="hours" />
+                                        <span class="margin-right--small">hours</span>
+                                        <input id="minutes" />
+                                        <span>minutes</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="settings">
+                            <div>Enable Google Search</div>
+                            <div>
+                                <div>
+                                    <label class="switch">
+                                    <input type="checkbox" id="googleSearchEnable" />
+                                    <span class="slider round"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="settings">
+                            <div>Show selected word</div>
+                            <div>
+                                <div>
+                                    <label class="switch">
+                                    <input type="checkbox" id="selectedWordEnable" />
+                                    <span class="slider round"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="settings">
+                            <div>Theme</div>
+                            <div>
+                                <select id="theme">
+                                    <option value="Classic" selected="selected">Classic</option>
+                                    <option value="Dark">Dark</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="previewArea">
+                <div class="preview">
+                    <div class="preview-header">
+                        Preview
+                        <div class="previewheader font-size-medium">(when the user selects the word "India")</div>
+                    </div>
+                    <customeele id="juzselect-popup">
+                        <customeele id="juzselect-word">India</customeele>
+                        <customeele>a republic in the Asian subcontinent in southern Asia; second most populous country in the world; achieved independence from the United Kingdom in 1947</customeele>
+                        <customeele id="juzselect-search">Search Google for "India"</customeele>
+                    </customeele>
+                    <button class="button" id="restore-button">Restore default</button>
+                </div>
+            </div>
+        </div>
+        <div id="changesUpdated">Changes updated</div>
+    </body>
+</html>

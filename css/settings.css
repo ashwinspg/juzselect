@@ -1,0 +1,161 @@
+*,
+*::after,
+*::before {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: inherit;
+}
+
+body {
+    font-family: serif;
+    width: 100%;
+    height: 100vh;
+    background-color: #5c5c5c;
+    margin: 0 3px;
+}
+
+.font-size-medium {
+    font-size: 15px;
+}
+
+.margin-right--small {
+    margin-right: 15px;
+}
+
+.margin-top--small {
+    margin-top: 10px;
+}
+
+.margin-top--medium {
+    margin-top: 20px;
+}
+
+#changesUpdated {
+    display: none;
+    position: absolute;
+    z-index: 99;
+    left: 50%;
+    top: 15px;
+    transform: translateX(-50%);
+    border: 2px solid rgb(34, 34, 34);
+    background-color: rgb(243, 211, 32);
+    color: black;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 8px 18px #888888;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.builder {
+    width: 100%;
+    height: 100%;
+    background-color: #dedede;
+}
+
+#juzselect-settings {
+    background-color: #f1f1f1;
+    width: 800px;
+    height: 430px;
+    border-radius: 10px;
+    box-shadow: 3px 5px 18px #888888;
+    margin: 30px auto 0px;
+}
+
+.builder-header {
+    font-size: 25px;
+    background-color: #5d5d5d;
+    color: #fff;
+    padding: 10px 5px;
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+}
+
+.settings-container {
+    font-size: 20px;
+    margin: 120px 10px 0px;
+    padding: 5px 10px 0px;
+}
+
+.settings {
+    margin: 25px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #5c5c5c;
+}
+
+.learnWord {
+    width: 55%;
+}
+
+.learnWord .description {
+    font-size: 15px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.notify {
+    display: flex;
+    flex-direction: column;
+}
+
+.notifyEnable {
+    align-self: flex-end;
+}
+
+.notifyDuration > * {
+    width: 70px;
+}
+
+#hours, #minutes {
+    width: 40px;
+}
+
+#theme {
+    font-family: serif;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 5px 25px 5px 5px;
+}
+
+.previewArea {
+    width: 50%;
+    height: 100%;
+    background-color: #e7e7e7;
+}
+
+.preview {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 75px auto 0px;
+    height: 500px;
+}
+
+.preview-header {
+    text-align: center;
+    font-size: 25px;
+}
+
+.preview #juzselect-popup {
+    display: block;
+    position: initial;
+    margin: 0px auto;
+}
+
+#restore-button {
+    align-self: center;
+}
