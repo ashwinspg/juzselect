@@ -10,6 +10,7 @@ Through this extension, you can:
 - Just double-click or select a word to view its meaning through a small pop-up bubble.
 - In pop-up bubble, there is a button where you can navigate to the Google search of a selected word.
 - If you go through options page, you can do the following things:
-	-> "Learn a word" is actually the notification for a specific interval of time (customizable) which shows a random word with its respective meaning.
+	-> "Learn a word" gives timely notifications on words with meaning at user specified time interval.
 	-> you can customize the pop-up bubble whether to show selected word, google search navigation, the type of theme (classic or dark) and notification of "learn a word".
 - Enable or disable the overall functionalities whenever required.
+
