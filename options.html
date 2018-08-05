@@ -4,22 +4,24 @@
         <title>Budget Manager Options</title>
         <script src="js/jquery.js"></script>
         <script src="js/jquery-ui.js"></script>
-        <script src="js/settings.js"></script>
-        <link rel="stylesheet" type="text/css" href="css/settings.css" />
+        <script src="js/options.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/options.css" />
         <link rel="stylesheet" type="text/css" href="css/common.css" />
         <link rel="stylesheet" type="text/css" href="css/content.css" />
         <link rel="stylesheet" type="text/css" href="css/jquery-ui.css" />
     </head>
     <body>
-        <div class="builder-header">Extension settings</div>
+        <div class="builder-header">Extension options</div>
         <div class="main-container">
             <div class="builder">
-                <div id="juzselect-settings">
-                    <div class="settings-container">
-                        <div class="settings">
+                <div id="juzselect-options">
+                    <div class="options-container">
+                        <div class="options">
                             <div class="learnWord">
                                 <div>Learn a word</div>
-                                <div class="description margin-top--small">(This feature is powered by Chrome extension Rich Notifications API. It shows a random word with its meaning in the user's system tray. When this option is enabled, the user can customize the interval period for showing the notification.)</div>
+                                <div class="description margin-top--small">
+                                    (It gives timely notifications on words with meaning at user specified time interval.)
+                                </div>
                             </div>
                             <div class="notify">
                                 <div class="notifyEnable">
@@ -38,29 +40,25 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="settings">
+                        <div class="options">
                             <div>Enable Google Search</div>
                             <div>
-                                <div>
-                                    <label class="switch">
-                                    <input type="checkbox" id="googleSearchEnable" />
-                                    <span class="slider round"></span>
-                                    </label>
-                                </div>
+                                <label class="switch">
+                                <input type="checkbox" id="googleSearchEnable" />
+                                <span class="slider round"></span>
+                                </label>
                             </div>
                         </div>
-                        <div class="settings">
+                        <div class="options">
                             <div>Show selected word</div>
                             <div>
-                                <div>
-                                    <label class="switch">
-                                    <input type="checkbox" id="selectedWordEnable" />
-                                    <span class="slider round"></span>
-                                    </label>
-                                </div>
+                                <label class="switch">
+                                <input type="checkbox" id="selectedWordEnable" />
+                                <span class="slider round"></span>
+                                </label>
                             </div>
                         </div>
-                        <div class="settings">
+                        <div class="options">
                             <div>Theme</div>
                             <div>
                                 <select id="theme">
