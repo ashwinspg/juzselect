@@ -1,1 +1,162 @@
-var _0xe787=["\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x54\x68\x65\x20\x6E\x6F\x74\x69\x66\x69\x63\x61\x74\x69\x6F\x6E\x20\x64\x75\x72\x61\x74\x69\x6F\x6E\x20\x73\x68\x6F\x75\x6C\x64\x20\x61\x74\x74\x61\x69\x6E\x20\x66\x6F\x6C\x6C\x6F\x77\x69\x6E\x67\x20\x63\x72\x69\x74\x65\x72\x69\x61\x3A\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2D\x20\x68\x6F\x75\x72\x73\x20\x61\x6E\x64\x20\x6D\x69\x6E\x75\x74\x65\x73\x20\x73\x68\x6F\x75\x6C\x64\x20\x6E\x6F\x74\x20\x62\x65\x20\x65\x6D\x70\x74\x79\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2D\x20\x68\x6F\x75\x72\x73\x20\x61\x6E\x64\x20\x6D\x69\x6E\x75\x74\x65\x73\x20\x73\x68\x6F\x75\x6C\x64\x20\x6E\x6F\x74\x20\x62\x65\x20\x30\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2D\x20\x68\x6F\x75\x72\x73\x20\x61\x6E\x64\x20\x6D\x69\x6E\x75\x74\x65\x73\x20\x73\x68\x6F\x75\x6C\x64\x20\x6E\x6F\x74\x20\x62\x65\x20\x64\x65\x63\x69\x6D\x61\x6C\x20\x76\x61\x6C\x75\x65\x73\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2D\x20\x68\x6F\x75\x72\x73\x20\x73\x68\x6F\x75\x6C\x64\x20\x62\x65\x20\x62\x65\x74\x77\x65\x65\x6E\x20\x30\x20\x61\x6E\x64\x20\x32\x33\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2D\x20\x6D\x69\x6E\x75\x74\x65\x73\x20\x73\x68\x6F\x75\x6C\x64\x20\x62\x65\x20\x62\x65\x74\x77\x65\x65\x6E\x20\x30\x20\x61\x6E\x64\x20\x35\x39\x0A\x20\x20\x20\x20\x20\x20\x20\x20","\x30","\x6A\x75\x7A\x73\x65\x6C\x65\x63\x74\x5F\x6E\x6F\x74\x69\x66\x79\x44\x75\x72\x61\x74\x69\x6F\x6E","\x66\x6C\x6F\x6F\x72","\x76\x61\x6C","\x23\x68\x6F\x75\x72\x73","\x23\x6D\x69\x6E\x75\x74\x65\x73","\x63\x68\x65\x63\x6B\x65\x64","\x6A\x75\x7A\x73\x65\x6C\x65\x63\x74\x5F\x6E\x6F\x74\x69\x66\x79\x44\x75\x72\x61\x74\x69\x6F\x6E\x45\x6E\x61\x62\x6C\x65","\x70\x72\x6F\x70","\x23\x6E\x6F\x74\x69\x66\x79\x44\x75\x72\x61\x74\x69\x6F\x6E\x45\x6E\x61\x62\x6C\x65","\x6A\x75\x7A\x73\x65\x6C\x65\x63\x74\x5F\x67\x6F\x6F\x67\x6C\x65\x53\x65\x61\x72\x63\x68\x45\x6E\x61\x62\x6C\x65","\x23\x67\x6F\x6F\x67\x6C\x65\x53\x65\x61\x72\x63\x68\x45\x6E\x61\x62\x6C\x65","\x6A\x75\x7A\x73\x65\x6C\x65\x63\x74\x5F\x73\x65\x6C\x65\x63\x74\x65\x64\x57\x6F\x72\x64\x45\x6E\x61\x62\x6C\x65","\x23\x73\x65\x6C\x65\x63\x74\x65\x64\x57\x6F\x72\x64\x45\x6E\x61\x62\x6C\x65","\x6A\x75\x7A\x73\x65\x6C\x65\x63\x74\x5F\x74\x68\x65\x6D\x65","\x23\x74\x68\x65\x6D\x65","\x66\x61\x64\x65\x49\x6E","\x23\x6A\x75\x7A\x73\x65\x6C\x65\x63\x74\x2D\x77\x6F\x72\x64","\x66\x61\x64\x65\x4F\x75\x74","\x23\x6A\x75\x7A\x73\x65\x6C\x65\x63\x74\x2D\x73\x65\x61\x72\x63\x68","\x23\x6E\x6F\x74\x69\x66\x79\x44\x75\x72\x61\x74\x69\x6F\x6E\x43\x6F\x6E\x74\x61\x69\x6E\x65\x72","\x43\x6C\x61\x73\x73\x69\x63","\x64\x61\x72\x6B","\x72\x65\x6D\x6F\x76\x65\x43\x6C\x61\x73\x73","\x23\x6A\x75\x7A\x73\x65\x6C\x65\x63\x74\x2D\x70\x6F\x70\x75\x70","\x61\x64\x64\x43\x6C\x61\x73\x73","\x63\x68\x61\x6E\x67\x65\x44\x75\x72\x61\x74\x69\x6F\x6E","\x73\x65\x6E\x64\x4D\x65\x73\x73\x61\x67\x65","\x72\x75\x6E\x74\x69\x6D\x65","\x43\x68\x61\x6E\x67\x65\x73\x20\x75\x70\x64\x61\x74\x65\x64","\x68\x74\x6D\x6C","\x23\x63\x68\x61\x6E\x67\x65\x73\x55\x70\x64\x61\x74\x65\x64","\x73\x65\x74","\x73\x79\x6E\x63","\x73\x74\x6F\x72\x61\x67\x65","\x73\x70\x69\x6E\x6E\x65\x72","\x63\x68\x61\x6E\x67\x65","\x6F\x6E","\x23\x6E\x6F\x74\x69\x66\x79\x44\x75\x72\x61\x74\x69\x6F\x6E\x45\x6E\x61\x62\x6C\x65\x2C\x20\x23\x67\x6F\x6F\x67\x6C\x65\x53\x65\x61\x72\x63\x68\x45\x6E\x61\x62\x6C\x65\x2C\x20\x23\x73\x65\x6C\x65\x63\x74\x65\x64\x57\x6F\x72\x64\x45\x6E\x61\x62\x6C\x65\x2C\x20\x23\x74\x68\x65\x6D\x65","\x6A\x75\x7A\x73\x65\x6C\x65\x63\x74\x5F\x69\x73\x45\x6E\x61\x62\x6C\x65","\x52\x65\x73\x74\x6F\x72\x65\x64\x20\x73\x75\x63\x63\x65\x73\x73\x66\x75\x6C\x6C\x79","\x63\x6C\x69\x63\x6B","\x23\x72\x65\x73\x74\x6F\x72\x65\x2D\x62\x75\x74\x74\x6F\x6E","\x67\x65\x74"];function isNull(_0xffafx2){return _0xffafx2== null|| _0xffafx2== undefined}var cacheData={};$(function(){function _0xffafx4(_0xffafx5,_0xffafx6){return (_0xffafx5== 0&& _0xffafx6== 0)|| (_0xffafx5< 0|| _0xffafx5> 23)|| (_0xffafx6< 0|| _0xffafx6> 59)|| isNaN(_0xffafx5)|| isNaN(_0xffafx6)}function _0xffafx7(_0xffafx5,_0xffafx6){return _0xffafx4(_0xffafx5,_0xffafx6)|| _0xffafx4(parseInt(_0xffafx5),parseInt(_0xffafx6))}function _0xffafx8(){alert(_0xe787[0])}function _0xffafx9(_0xffafxa){return (_0xffafxa< 10)?_0xe787[1]+ _0xffafxa.toString():_0xffafxa.toString()}function _0xffafxb(_0xffafxc){var _0xffafxd=parseInt(_0xffafxc[_0xe787[2]]);var _0xffafx5=Math[_0xe787[3]](_0xffafxd/ 60);var _0xffafx6=Math[_0xe787[3]](_0xffafxd% 60);$(_0xe787[5])[_0xe787[4]](_0xffafx9(_0xffafx5));$(_0xe787[6])[_0xe787[4]](_0xffafx9(_0xffafx6));$(_0xe787[10])[_0xe787[9]](_0xe787[7],_0xffafxc[_0xe787[8]]);$(_0xe787[12])[_0xe787[9]](_0xe787[7],_0xffafxc[_0xe787[11]]);$(_0xe787[14])[_0xe787[9]](_0xe787[7],_0xffafxc[_0xe787[13]]);$(_0xe787[16])[_0xe787[4]](_0xffafxc[_0xe787[15]])}function _0xffafxe(){if(cacheData[_0xe787[13]]){$(_0xe787[18])[_0xe787[17]]()}else {$(_0xe787[18])[_0xe787[19]]()};if(cacheData[_0xe787[11]]){$(_0xe787[20])[_0xe787[17]]()}else {$(_0xe787[20])[_0xe787[19]]()};if(cacheData[_0xe787[8]]){$(_0xe787[21])[_0xe787[17]]()}else {$(_0xe787[21])[_0xe787[19]]()};if(cacheData[_0xe787[15]]== _0xe787[22]){$(_0xe787[25])[_0xe787[24]](_0xe787[23])}else {$(_0xe787[25])[_0xe787[26]](_0xe787[23])}}function _0xffafxf(){var _0xffafxc={};var _0xffafx5=$(_0xe787[5])[_0xe787[4]]();var _0xffafx6=$(_0xe787[6])[_0xe787[4]]();var _0xffafxd;if(_0xffafx7(_0xffafx5,_0xffafx6)){_0xffafxd= parseInt(cacheData[_0xe787[2]]);_0xffafx5= parseInt(_0xffafxd/ 60);_0xffafx6= parseInt(_0xffafxd% 60);$(_0xe787[5])[_0xe787[4]](_0xffafx9(_0xffafx5));$(_0xe787[6])[_0xe787[4]](_0xffafx9(_0xffafx6));_0xffafx8();return};_0xffafx5= parseInt(_0xffafx5);_0xffafx6= parseInt(_0xffafx6);$(_0xe787[5])[_0xe787[4]](_0xffafx9(_0xffafx5));$(_0xe787[6])[_0xe787[4]](_0xffafx9(_0xffafx6));_0xffafxd= (parseInt(_0xffafx5)* 60)+ (parseInt(_0xffafx6));var _0xffafx10=$(_0xe787[10])[_0xe787[9]](_0xe787[7]);var _0xffafx11=$(_0xe787[12])[_0xe787[9]](_0xe787[7]);var _0xffafx12=$(_0xe787[14])[_0xe787[9]](_0xe787[7]);var _0xffafx13=$(_0xe787[16])[_0xe787[4]]();_0xffafxc[_0xe787[8]]= _0xffafx10;_0xffafxc[_0xe787[2]]= _0xffafxd;_0xffafxc[_0xe787[11]]= _0xffafx11;_0xffafxc[_0xe787[13]]= _0xffafx12;_0xffafxc[_0xe787[15]]= _0xffafx13;chrome[_0xe787[35]][_0xe787[34]][_0xe787[33]](_0xffafxc,function(){if(cacheData[_0xe787[2]]!= _0xffafxc[_0xe787[2]]){chrome[_0xe787[29]][_0xe787[28]]({todo:_0xe787[27]})};for(var _0xffafx14 in _0xffafxc){cacheData[_0xffafx14]= _0xffafxc[_0xffafx14]};_0xffafxe();$(_0xe787[32])[_0xe787[31]](_0xe787[30])[_0xe787[17]]()[_0xe787[19]](1500)})}$(_0xe787[5])[_0xe787[36]]({min:0,max:23,change:_0xffafxf});$(_0xe787[6])[_0xe787[36]]({min:0,max:59,change:_0xffafxf});$(_0xe787[39])[_0xe787[38]](_0xe787[37],_0xffafxf);$(_0xe787[43])[_0xe787[42]](function(){var _0xffafxc={};_0xffafxc[_0xe787[40]]= true;_0xffafxc[_0xe787[8]]= true;_0xffafxc[_0xe787[2]]= 5;_0xffafxc[_0xe787[11]]= true;_0xffafxc[_0xe787[13]]= true;_0xffafxc[_0xe787[15]]= _0xe787[22];chrome[_0xe787[35]][_0xe787[34]][_0xe787[33]](_0xffafxc,function(){if(cacheData[_0xe787[2]]!= _0xffafxc[_0xe787[2]]){chrome[_0xe787[29]][_0xe787[28]]({todo:_0xe787[27]})};for(var _0xffafx14 in _0xffafxc){cacheData[_0xffafx14]= _0xffafxc[_0xffafx14]};_0xffafxb(_0xffafxc);_0xffafxe();$(_0xe787[32])[_0xe787[31]](_0xe787[41])[_0xe787[17]]()[_0xe787[19]](2000)})});chrome[_0xe787[35]][_0xe787[34]][_0xe787[44]]([_0xe787[8],_0xe787[2],_0xe787[11],_0xe787[13],_0xe787[15]],function(_0xffafx15){_0xffafxb(_0xffafx15);for(var _0xffafx14 in _0xffafx15){cacheData[_0xffafx14]= _0xffafx15[_0xffafx14]};_0xffafxe()})})
+function isNull(value){
+    return value == null || value == undefined;
+}
+
+var cacheData = {};
+
+$(function(){
+
+    function executeConditions(hours, minutes){
+        return (hours == 0 && minutes == 0) || (hours < 0 || hours > 23) || (minutes < 0 || minutes > 59) || isNaN(hours) || isNaN(minutes);
+    }
+
+    function isInValid(hours, minutes){
+        return executeConditions(hours, minutes) || executeConditions(parseInt(hours), parseInt(minutes));
+    }
+
+    function showAlert(){
+        alert (`
+            The notification duration should attain following criteria:
+                - hours and minutes should not be empty
+                - hours and minutes should not be 0
+                - hours and minutes should not be decimal values
+                - hours should be between 0 and 23
+                - minutes should be between 0 and 59
+        `);
+    }
+
+    function pad(d) {
+        return (d < 10) ? '0' + d.toString() : d.toString();
+    }
+
+    function updateDOM(obj){
+        var duration = parseInt(obj.juzselect_notifyDuration);
+        var hours = Math.floor(duration / 60);
+        var minutes = Math.floor(duration % 60);
+        $("#hours").val(pad(hours));
+        $("#minutes").val(pad(minutes));
+
+        $("#notifyDurationEnable").prop("checked", obj.juzselect_notifyDurationEnable);
+        $("#googleSearchEnable").prop("checked", obj.juzselect_googleSearchEnable);
+        $("#selectedWordEnable").prop("checked", obj.juzselect_selectedWordEnable);
+        $("#theme").val(obj.juzselect_theme);
+    }
+
+    function updatePreviewComponents(){
+        if(cacheData.juzselect_selectedWordEnable){
+            $("#juzselect-word").fadeIn();
+        }else{
+            $("#juzselect-word").fadeOut();
+        }
+        if(cacheData.juzselect_googleSearchEnable){
+            $("#juzselect-search").fadeIn();
+        }else{
+            $("#juzselect-search").fadeOut();
+        }
+        if(cacheData.juzselect_notifyDurationEnable){
+            $("#notifyDurationContainer").fadeIn();
+        }else{
+            $("#notifyDurationContainer").fadeOut();
+        }
+        if(cacheData.juzselect_theme == "Classic"){
+            $("#juzselect-popup").removeClass("dark");
+        }else{
+            $("#juzselect-popup").addClass("dark");
+        }
+    }
+
+    function changeHandler(){
+        var obj = {};
+
+        var hours = $("#hours").val();
+        var minutes = $("#minutes").val();
+        var duration;
+
+        if(isInValid(hours, minutes)){
+
+            duration = parseInt(cacheData.juzselect_notifyDuration);
+            hours = parseInt(duration / 60);
+            minutes = parseInt(duration % 60);
+            
+            $("#hours").val(pad(hours));
+            $("#minutes").val(pad(minutes));
+
+            showAlert();
+            return;
+        }
+
+        // removing integers
+        hours = parseInt(hours);
+        minutes = parseInt(minutes);
+        $("#hours").val(pad(hours));
+        $("#minutes").val(pad(minutes));
+        duration = (parseInt(hours) * 60) + (parseInt(minutes));
+
+        var notifyDurationEnable = $("#notifyDurationEnable").prop("checked");
+        var googleSearchEnable = $("#googleSearchEnable").prop("checked");
+        var selectedWordEnable = $("#selectedWordEnable").prop("checked");
+        var theme = $("#theme").val();
+
+        obj.juzselect_notifyDurationEnable = notifyDurationEnable;
+        obj.juzselect_notifyDuration = duration;
+        obj.juzselect_googleSearchEnable = googleSearchEnable;
+        obj.juzselect_selectedWordEnable = selectedWordEnable;
+        obj.juzselect_theme = theme;
+
+        chrome.storage.sync.set(obj, function(){
+            if(cacheData.juzselect_notifyDuration != obj.juzselect_notifyDuration){
+                chrome.runtime.sendMessage({todo: "changeDuration"});
+            }
+            for(var index in obj){
+                cacheData[index] = obj[index];
+            }
+            updatePreviewComponents();
+            $("#changesUpdated").html("Changes updated").fadeIn().fadeOut(1500);
+        });
+    }
+
+    $("#hours").spinner({
+        min: 0, 
+        max: 23,
+        change: changeHandler
+    });
+
+    $("#minutes").spinner({
+        min: 0, 
+        max: 59,
+        change: changeHandler
+    });
+
+    $("#notifyDurationEnable, #googleSearchEnable, #selectedWordEnable, #theme").on("change", changeHandler);
+
+    $("#restore-button").click(function(){
+        var obj = {};
+        obj.juzselect_isEnable = true;
+        obj.juzselect_notifyDurationEnable = true;
+        obj.juzselect_notifyDuration = 5;
+        obj.juzselect_googleSearchEnable = true;
+        obj.juzselect_selectedWordEnable = true;
+        obj.juzselect_theme = 'Classic';
+        chrome.storage.sync.set(obj, function(){
+            if(cacheData.juzselect_notifyDuration != obj.juzselect_notifyDuration){
+                chrome.runtime.sendMessage({todo: "changeDuration"});
+            }
+            for(var index in obj){
+                cacheData[index] = obj[index];
+            }
+            updateDOM(obj);
+            updatePreviewComponents();
+            $("#changesUpdated").html("Restored successfully").fadeIn().fadeOut(2000);
+        });
+    });
+
+    chrome.storage.sync.get(['juzselect_notifyDurationEnable', 'juzselect_notifyDuration', 'juzselect_googleSearchEnable', 'juzselect_selectedWordEnable', 'juzselect_theme'], function(res){
+
+        updateDOM(res);
+        
+        for(var index in res){
+            cacheData[index] = res[index];
+        }
+        updatePreviewComponents();
+    });
+});

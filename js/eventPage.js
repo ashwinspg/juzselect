@@ -1,1 +1,105 @@
-var _0x1562=["\x69\x64","\x68\x74\x74\x70\x73\x3A\x2F\x2F","\x73\x74\x61\x72\x74\x73\x57\x69\x74\x68","\x75\x72\x6C","\x68\x74\x74\x70\x3A\x2F\x2F","\x6A\x73\x2F\x6A\x71\x75\x65\x72\x79\x2E\x6A\x73","\x6A\x73\x2F\x63\x6F\x6E\x74\x65\x6E\x74\x2E\x6A\x73","\x6A\x73\x2F\x70\x72\x6F\x63\x65\x73\x73\x6F\x72\x2E\x6A\x73","\x63\x73\x73\x2F\x63\x6F\x6E\x74\x65\x6E\x74\x2E\x63\x73\x73","\x69\x6E\x73\x65\x72\x74\x43\x53\x53","\x74\x61\x62\x73","\x65\x78\x65\x63\x75\x74\x65\x53\x63\x72\x69\x70\x74","\x65\x72\x72\x6F\x72\x20\x69\x6E\x20\x63\x68\x72\x6F\x6D\x65\x2E\x74\x61\x62\x73\x2E\x65\x78\x65\x63\x75\x74\x65\x53\x63\x72\x69\x70\x74\x3A\x20","\x6C\x6F\x67","\x67\x65\x74\x41\x6C\x6C\x49\x6E\x57\x69\x6E\x64\x6F\x77","\x67\x65\x74\x41\x6C\x6C","\x77\x69\x6E\x64\x6F\x77\x73","\x6A\x75\x7A\x73\x65\x6C\x65\x63\x74\x5F\x69\x73\x45\x6E\x61\x62\x6C\x65","\x6A\x75\x7A\x73\x65\x6C\x65\x63\x74\x5F\x6E\x6F\x74\x69\x66\x79\x44\x75\x72\x61\x74\x69\x6F\x6E\x45\x6E\x61\x62\x6C\x65","\x6A\x75\x7A\x73\x65\x6C\x65\x63\x74\x5F\x6E\x6F\x74\x69\x66\x79\x44\x75\x72\x61\x74\x69\x6F\x6E","\x6A\x75\x7A\x73\x65\x6C\x65\x63\x74\x5F\x67\x6F\x6F\x67\x6C\x65\x53\x65\x61\x72\x63\x68\x45\x6E\x61\x62\x6C\x65","\x6A\x75\x7A\x73\x65\x6C\x65\x63\x74\x5F\x73\x65\x6C\x65\x63\x74\x65\x64\x57\x6F\x72\x64\x45\x6E\x61\x62\x6C\x65","\x6A\x75\x7A\x73\x65\x6C\x65\x63\x74\x5F\x74\x68\x65\x6D\x65","\x43\x6C\x61\x73\x73\x69\x63","\x44\x65\x66\x61\x75\x6C\x74\x20\x76\x61\x6C\x75\x65\x73\x20\x70\x6F\x70\x75\x6C\x61\x74\x65\x64","\x2F\x6F\x70\x74\x69\x6F\x6E\x73\x2E\x68\x74\x6D\x6C","\x63\x72\x65\x61\x74\x65","\x73\x65\x74","\x73\x79\x6E\x63","\x73\x74\x6F\x72\x61\x67\x65","\x61\x64\x64\x4C\x69\x73\x74\x65\x6E\x65\x72","\x6F\x6E\x49\x6E\x73\x74\x61\x6C\x6C\x65\x64","\x72\x75\x6E\x74\x69\x6D\x65","\x74\x6F\x64\x6F","\x66\x69\x6E\x64\x4D\x65\x61\x6E\x69\x6E\x67","\x77\x6F\x72\x64","\x6D\x65\x61\x6E\x69\x6E\x67\x48\x61\x6E\x64\x6C\x65\x72","\x63\x68\x61\x6E\x67\x65\x44\x75\x72\x61\x74\x69\x6F\x6E","\x67\x65\x74","\x6F\x6E\x4D\x65\x73\x73\x61\x67\x65","\x75\x6E\x64\x65\x66\x69\x6E\x65\x64","\x6B\x65\x79\x73","\x72\x61\x6E\x64\x6F\x6D","\x66\x6C\x6F\x6F\x72","\x6C\x65\x6E\x67\x74\x68","\x62\x61\x73\x69\x63","\x69\x6D\x61\x67\x65\x2F\x69\x63\x6F\x6E\x34\x38\x2E\x70\x6E\x67","\x6A\x75\x7A\x73\x65\x6C\x65\x63\x74\x5F\x6E\x6F\x74\x69\x66\x69\x63\x61\x74\x69\x6F\x6E","\x6E\x6F\x74\x69\x66\x69\x63\x61\x74\x69\x6F\x6E\x73","\x63\x6C\x65\x61\x72","\x61\x64\x64\x69\x6E\x67\x20\x62\x61\x63\x6B\x67\x72\x6F\x75\x6E\x64\x20\x6C\x69\x73\x74\x65\x6E\x65\x72\x73"];function isNull(_0xf8f6x2){return _0xf8f6x2== null|| _0xf8f6x2== undefined}function executeScriptAllTabs(){chrome[_0x1562[16]][_0x1562[15]]({},function(_0xf8f6x4){for(var _0xf8f6x5 in _0xf8f6x4){chrome[_0x1562[10]][_0x1562[14]](_0xf8f6x4[_0xf8f6x5][_0x1562[0]],function(_0xf8f6x6){for(var _0xf8f6x7 in _0xf8f6x6){try{if(_0xf8f6x6[_0xf8f6x7][_0x1562[3]][_0x1562[2]](_0x1562[1])|| _0xf8f6x6[_0xf8f6x7][_0x1562[3]][_0x1562[2]](_0x1562[4])){(function(){var _0xf8f6x8=_0xf8f6x6[_0xf8f6x7][_0x1562[0]];var _0xf8f6x9=_0xf8f6x6[_0xf8f6x7][_0x1562[3]];chrome[_0x1562[10]][_0x1562[11]](_0xf8f6x8,{file:_0x1562[5],allFrames:true},function(){chrome[_0x1562[10]][_0x1562[11]](_0xf8f6x8,{file:_0x1562[6],allFrames:true},function(){chrome[_0x1562[10]][_0x1562[11]](_0xf8f6x8,{file:_0x1562[7],allFrames:true},function(){chrome[_0x1562[10]][_0x1562[9]](_0xf8f6x8,{file:_0x1562[8],allFrames:true})})})})})()}}catch(error){console[_0x1562[13]](_0x1562[12]+ error)}}})}})}function addEventListeners(){chrome[_0x1562[32]][_0x1562[31]][_0x1562[30]](function(){var _0xf8f6xb={};_0xf8f6xb[_0x1562[17]]= true;_0xf8f6xb[_0x1562[18]]= true;_0xf8f6xb[_0x1562[19]]= 5;_0xf8f6xb[_0x1562[20]]= true;_0xf8f6xb[_0x1562[21]]= true;_0xf8f6xb[_0x1562[22]]= _0x1562[23];chrome[_0x1562[29]][_0x1562[28]][_0x1562[27]](_0xf8f6xb,function(){console[_0x1562[13]](_0x1562[24]);if(_0xf8f6xb[_0x1562[19]]){initNotification(_0xf8f6xb[_0x1562[19]]);chrome[_0x1562[10]][_0x1562[26]]({"\x75\x72\x6C":_0x1562[25]})}})});chrome[_0x1562[32]][_0x1562[39]][_0x1562[30]](function(_0xf8f6xc,_0xf8f6xd,_0xf8f6xe){if(_0xf8f6xc[_0x1562[33]]== _0x1562[34]){var _0xf8f6xf=juzselect_dictionary[_0xf8f6xc[_0x1562[35]]];_0xf8f6xe({todo:_0x1562[36],meaning:_0xf8f6xf})}else {if(_0xf8f6xc[_0x1562[33]]== _0x1562[37]){chrome[_0x1562[29]][_0x1562[28]][_0x1562[38]]([_0x1562[19]],function(_0xf8f6x10){initNotification(_0xf8f6x10[_0x1562[19]])})}}})}function initNotification(_0xf8f6x12){if( typeof notification!== _0x1562[40]&&  !isNull(notification)){clearInterval(notification)};notification= setInterval(function(){chrome[_0x1562[29]][_0x1562[28]][_0x1562[38]]([_0x1562[17],_0x1562[18]],function(_0xf8f6x10){if(!isNull(_0xf8f6x10[_0x1562[17]])&& _0xf8f6x10[_0x1562[17]] &&  !isNull(_0xf8f6x10[_0x1562[18]]) && _0xf8f6x10[_0x1562[18]]){var _0xf8f6x13=Object[_0x1562[41]](juzselect_dictionary);var _0xf8f6x14=Math[_0x1562[43]](Math[_0x1562[42]]()* 1000000)% _0xf8f6x13[_0x1562[44]];var _0xf8f6x15=_0xf8f6x13[_0xf8f6x14];var _0xf8f6x2=juzselect_dictionary[_0xf8f6x15];var _0xf8f6x16={type:_0x1562[45],title:_0xf8f6x15,message:_0xf8f6x2,iconUrl:_0x1562[46]};chrome[_0x1562[48]][_0x1562[49]](_0x1562[47],function(){chrome[_0x1562[48]][_0x1562[26]](_0x1562[47],_0xf8f6x16)})}})},(parseFloat(_0xf8f6x12)* 60* 1000))}(function(){chrome[_0x1562[29]][_0x1562[28]][_0x1562[38]]([_0x1562[19]],function(_0xf8f6x10){if(!isNull(_0xf8f6x10[_0x1562[19]])){initNotification(_0xf8f6x10[_0x1562[19]])}});executeScriptAllTabs();console[_0x1562[13]](_0x1562[50]);addEventListeners()})()
+function isNull(value){
+    return value == null || value == undefined;
+}
+
+function executeScriptAllTabs(){
+    chrome.windows.getAll({}, function(allWindow){
+        for(var windowIndex in allWindow){
+            chrome.tabs.getAllInWindow(allWindow[windowIndex].id, function(allTabs){
+                for(var tabIndex in allTabs){
+                    try{
+                        if(allTabs[tabIndex].url.startsWith("https://") || allTabs[tabIndex].url.startsWith("http://")){
+                            (function(){
+                                var tabId = allTabs[tabIndex].id;
+                                var url = allTabs[tabIndex].url;
+                                chrome.tabs.executeScript(tabId, { file: "js/jquery.js", allFrames: true }, function(){
+                                    chrome.tabs.executeScript(tabId, { file: "js/content.js", allFrames: true }, function(){
+                                        chrome.tabs.executeScript(tabId, { file: "js/processor.js", allFrames: true },function(){
+                                            chrome.tabs.insertCSS(tabId, { file: "css/content.css", allFrames: true });
+                                        });
+                                    });
+                                });
+                            })();
+                        }
+                    }catch(error){
+                        console.log("error in chrome.tabs.executeScript: " + error);
+                    }
+                }
+            });
+        }
+    });
+}
+
+function addEventListeners(){
+    chrome.runtime.onInstalled.addListener(function() {
+        var obj = {};
+        obj.juzselect_isEnable = true;
+        obj.juzselect_notifyDurationEnable = true;
+        obj.juzselect_notifyDuration = 5;
+        obj.juzselect_googleSearchEnable = true;
+        obj.juzselect_selectedWordEnable = true;
+        obj.juzselect_theme = 'Classic';
+        chrome.storage.sync.set(obj, function(){
+            console.log("Default values populated");
+            if(obj.juzselect_notifyDuration){
+                initNotification(obj.juzselect_notifyDuration);
+                chrome.tabs.create({'url': "/options.html" });
+            }
+        });
+    });
+
+    // chrome.management.onEnabled.addListener(function(){
+        
+    // });
+
+    chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
+        if (request.todo == "findMeaning"){
+            var wordMeaning = juzselect_dictionary[request.word];
+            sendResponse({todo: "meaningHandler", meaning: wordMeaning});
+        }else if (request.todo == "changeDuration"){
+            chrome.storage.sync.get(['juzselect_notifyDuration'], function(res){
+                initNotification(res.juzselect_notifyDuration);
+            });
+        }
+    });
+}
+
+function initNotification(notifyInterval){
+    if(typeof notification !== 'undefined' && !isNull(notification)){
+        clearInterval(notification);
+    }
+    notification = setInterval(function(){
+        chrome.storage.sync.get(['juzselect_isEnable', 'juzselect_notifyDurationEnable'], function(res){
+            if(!isNull(res.juzselect_isEnable) && res.juzselect_isEnable && !isNull(res.juzselect_notifyDurationEnable) && res.juzselect_notifyDurationEnable){
+    
+                var dictKeys = Object.keys(juzselect_dictionary);
+                var keyIndex = Math.floor(Math.random() * 1000000) % dictKeys.length;    // 147784
+    
+                var key = dictKeys[keyIndex];
+                var value = juzselect_dictionary[key];
+                
+                var opt = {
+                    type: "basic",
+                    title: key,
+                    message: value,
+                    iconUrl: "image/icon48.png"
+                };
+                chrome.notifications.clear('juzselect_notification', function(){
+                    chrome.notifications.create('juzselect_notification', opt);
+                });
+            }
+        });
+    }, (parseFloat(notifyInterval) * 60 * 1000));
+}
+
+// initVariables
+(function(){
+    chrome.storage.sync.get(['juzselect_notifyDuration'], function(res){
+        if(!isNull(res.juzselect_notifyDuration)){
+            initNotification(res.juzselect_notifyDuration);
+        }
+    });
+    executeScriptAllTabs();
+    console.log("adding background listeners");
+    addEventListeners();
+})();

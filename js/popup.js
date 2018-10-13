@@ -1,1 +1,16 @@
-var _0x1322=["\x6A\x75\x7A\x73\x65\x6C\x65\x63\x74\x5F\x69\x73\x45\x6E\x61\x62\x6C\x65","\x63\x68\x65\x63\x6B\x65\x64","\x61\x74\x74\x72","\x23\x69\x73\x45\x6E\x61\x62\x6C\x65","\x63\x68\x61\x6E\x67\x65","\x3A\x63\x68\x65\x63\x6B\x65\x64","\x69\x73","\x73\x65\x74","\x73\x79\x6E\x63","\x73\x74\x6F\x72\x61\x67\x65","\x6F\x6E","\x67\x65\x74","\x6D\x6F\x75\x73\x65\x64\x6F\x77\x6E","\x2F\x6F\x70\x74\x69\x6F\x6E\x73\x2E\x68\x74\x6D\x6C","\x63\x72\x65\x61\x74\x65","\x74\x61\x62\x73","\x23\x6A\x75\x7A\x73\x65\x6C\x65\x63\x74\x2D\x6F\x70\x74\x69\x6F\x6E\x73"];function isNull(_0x854fx2){return _0x854fx2== null|| _0x854fx2== undefined}$(function(){chrome[_0x1322[9]][_0x1322[8]][_0x1322[11]]([_0x1322[0]],function(_0x854fx3){$(_0x1322[3])[_0x1322[2]](_0x1322[1],_0x854fx3[_0x1322[0]]);$(_0x1322[3])[_0x1322[10]](_0x1322[4],function(){chrome[_0x1322[9]][_0x1322[8]][_0x1322[7]]({juzselect_isEnable:$(this)[_0x1322[6]](_0x1322[5])})})});$(_0x1322[16])[_0x1322[10]](_0x1322[12],function(_0x854fx4){chrome[_0x1322[15]][_0x1322[14]]({"\x75\x72\x6C":_0x1322[13]})})})
+function isNull(value){
+    return value == null || value == undefined;
+}
+
+$(function(){
+    chrome.storage.sync.get(['juzselect_isEnable'], function(res){
+        $("#isEnable").attr("checked", res.juzselect_isEnable);
+        $("#isEnable").on("change", function(){
+            chrome.storage.sync.set({juzselect_isEnable: $(this).is(":checked")});
+        });
+    });
+    
+    $("#juzselect-options").on('mousedown', function(e){
+        chrome.tabs.create({'url': "/options.html" });
+    });
+});

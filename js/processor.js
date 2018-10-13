@@ -1,1 +1,28 @@
-var _0x6a0c=["\x66\x69\x6E\x64\x4D\x65\x61\x6E\x69\x6E\x67","\x74\x6F\x64\x6F","\x6D\x65\x61\x6E\x69\x6E\x67\x48\x61\x6E\x64\x6C\x65\x72","\x6D\x65\x61\x6E\x69\x6E\x67","\x73\x65\x6E\x64\x4D\x65\x73\x73\x61\x67\x65","\x72\x75\x6E\x74\x69\x6D\x65","\x65\x72\x72\x6F\x72\x20\x69\x6E\x20\x6A\x75\x7A\x73\x65\x6C\x65\x63\x74\x20\x28\x64\x69\x63\x74\x69\x6F\x6E\x61\x72\x79\x20\x70\x72\x6F\x63\x65\x73\x73\x6F\x72\x29\x3A\x20","\x6C\x6F\x67","\x6A\x75\x7A\x73\x65\x6C\x65\x63\x74\x5F\x69\x73\x45\x6E\x61\x62\x6C\x65","\x6A\x75\x7A\x73\x65\x6C\x65\x63\x74\x5F\x67\x6F\x6F\x67\x6C\x65\x53\x65\x61\x72\x63\x68\x45\x6E\x61\x62\x6C\x65","\x6A\x75\x7A\x73\x65\x6C\x65\x63\x74\x5F\x73\x65\x6C\x65\x63\x74\x65\x64\x57\x6F\x72\x64\x45\x6E\x61\x62\x6C\x65","\x6A\x75\x7A\x73\x65\x6C\x65\x63\x74\x5F\x74\x68\x65\x6D\x65","\x67\x65\x74","\x73\x79\x6E\x63","\x73\x74\x6F\x72\x61\x67\x65","\x65\x72\x72\x6F\x72\x20\x69\x6E\x20\x6A\x75\x7A\x73\x65\x6C\x65\x63\x74\x20\x28\x70\x72\x6F\x63\x65\x73\x73\x6F\x72\x29\x3A\x20"];function dictionaryProcessor(_0x3e5cx2){return  new Promise(function(_0x3e5cx3,_0x3e5cx4){try{chrome[_0x6a0c[5]][_0x6a0c[4]]({todo:_0x6a0c[0],word:_0x3e5cx2},function(_0x3e5cx5){if(_0x3e5cx5[_0x6a0c[1]]== _0x6a0c[2]){_0x3e5cx3(_0x3e5cx5[_0x6a0c[3]])}})}catch(error){console[_0x6a0c[7]](_0x6a0c[6]+ error)}})}function juzselectProcessor(){return  new Promise(function(_0x3e5cx3,_0x3e5cx4){try{chrome[_0x6a0c[14]][_0x6a0c[13]][_0x6a0c[12]]([_0x6a0c[8],_0x6a0c[9],_0x6a0c[10],_0x6a0c[11]],function(_0x3e5cx7){_0x3e5cx3(_0x3e5cx7)})}catch(error){console[_0x6a0c[7]](_0x6a0c[15]+ error)}})}
+
+function dictionaryProcessor(selectedWord){
+    return new Promise(function(resolve, reject){
+        try{
+            chrome.runtime.sendMessage({todo: "findMeaning", word: selectedWord}, function(response){
+                if (response.todo == "meaningHandler"){
+                    resolve(response.meaning);
+                }
+            });
+        }
+        catch(error){
+            console.log("error in juzselect (dictionary processor): "+error);
+        }
+    });
+}
+
+function juzselectProcessor(){
+    return new Promise(function(resolve, reject){
+        try{
+            chrome.storage.sync.get(['juzselect_isEnable', 'juzselect_googleSearchEnable', 'juzselect_selectedWordEnable', 'juzselect_theme'], function(res){
+                resolve(res);
+            });
+        }
+        catch(error){
+            console.log("error in juzselect (processor): "+error);
+        }
+    });
+}
