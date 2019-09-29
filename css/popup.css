@@ -9,17 +9,20 @@
 body {
   font-family: serif;
   width: 200px;
+  height: 90px;
   background-color: #f1f1f1;
 }
 
 .options {
   display: flex;
   flex-direction: column;
+  height: inherit;
 }
 
 .options > * {
   margin: 5px;
   padding: 5px;
+  height: 50%;
 }
  
 .options-text{
@@ -37,3 +40,37 @@ body {
   background-color: #e0e0e0;
   border-radius: 3px;
 }
+
+/*-----loader-----*/
+
+#loader-container{
+    display: block;
+    background-color: #e0e0e0;
+    z-index: 99;
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    top: 0px;
+    left: 0px;
+}
+
+.loader {
+    display: block;
+    position: absolute;
+    z-index: 99;
+    left: 77px;
+    top: 17px;
+    border: 10px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 10px solid #3498db;
+    width: 30px;
+    height: 30px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/*----------------*/

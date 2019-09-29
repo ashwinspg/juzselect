@@ -158,5 +158,8 @@ $(function(){
             cacheData[index] = res[index];
         }
         updatePreviewComponents();
+        setTimeout(function(){
+            $("#loader-container").hide();
+        }, 500);
     });
 });
