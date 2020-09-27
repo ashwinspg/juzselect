@@ -24,13 +24,13 @@
             </nav>
 
             <div class="row option">
-                <div class="col s8 info-icon-container">
+                <div class="col s9 info-icon-container">
                         Learn a word
                         <i class="material-icons tooltipped" 
                             data-tooltip="It gives timely notifications on words with meaning at user specified time interval" 
                             style="margin: 0 5px;">info_outline</i>
                 </div>
-                <div class="col s4 option-input">
+                <div class="col s3 option-input">
                     <div class="switch">
                         <label>
                             Off
@@ -43,13 +43,13 @@
             </div>
 
             <div class="row option" id="notify-duration-container">
-                <div class="col s8 info-icon-container">
+                <div class="col s9 info-icon-container">
                     Time Interval (in hours)
                     <i class="material-icons tooltipped" 
                             data-tooltip="Learn a word in specified interval" 
                             style="margin: 0 5px;">info_outline</i>
                 </div>
-                <div class="col s4 option-input">
+                <div class="col s3 option-input">
                     <span class="range-field" style="margin: unset;">
                         <input type="range" id="hours" min="1" max="24" value="1" />                        
                     </span>
@@ -58,8 +58,8 @@
             </div>
 
             <div class="row option">
-                <div class="col s8">Enable Google Search</div>
-                <div class="col s4 option-input">
+                <div class="col s9">Enable Google Search</div>
+                <div class="col s3 option-input">
                     <div class="switch">
                         <label>
                             Off
@@ -72,8 +72,8 @@
             </div>
 
             <div class="row option">
-                <div class="col s8">Show selected word</div>
-                <div class="col s4 option-input">
+                <div class="col s9">Show selected word</div>
+                <div class="col s3 option-input">
                     <div class="switch">
                         <label>
                             Off
@@ -86,8 +86,8 @@
             </div>
 
             <div class="row option">
-                <div class="col s8">Theme</div>
-                <div class="col s4 option-input">
+                <div class="col s9">Theme</div>
+                <div class="col s3 option-input">
                     <div class="input-field" style="width: 6rem;margin: unset;">
                         <select id="theme">
                             <option value="Classic" selected="selected">Classic</option>
@@ -107,7 +107,7 @@
                     </div>
                     <div id="jz-popup">
                         <div id="jz-word">India</div>
-                        <div>a republic in the Asian subcontinent in southern Asia; second most populous country in the world; achieved independence from the United Kingdom in 1947</div>
+                        <div id="jz-description">a republic in the Asian subcontinent in southern Asia; second most populous country in the world; achieved independence from the United Kingdom in 1947</div>
                         <div id="jz-search">Search Google for "India"</div>
                     </div>
                 </div>
@@ -117,9 +117,6 @@
                 <div id="restore-button" class="waves-effect waves-light btn">Restore default</div>
             </div>
 
-        </div>
-        <div id='loader-container'>
-            <div class="loader"></div>
         </div>
     </body>
 </html>

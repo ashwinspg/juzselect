@@ -110,7 +110,7 @@ try{
                                                 htmlString = htmlString + "<div id='jz-word'>" + wordArr[0] + "</div>";
                                             }
 
-                                            var meaningTag = meaning ? "<div>" + meaning + "</div>" : "<div id='juzselect-no-result'>No Results</div>";
+                                            var meaningTag = meaning ? "<div id='jz-description'>" + meaning + "</div>" : "<div id='juzselect-no-result'>No Results</div>";
                                             htmlString = htmlString + meaningTag;
                                             if(res.jzGoogleSearchFlag){
                                                 htmlString = htmlString + "<div id='jz-search'>Search Google for \""+wordArr[0]+"\"</div>";

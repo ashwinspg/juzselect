@@ -8,10 +8,12 @@ $(function(){
     function updateDOM(obj){        
         $("#notify-duration-enable").prop("checked", obj.jzNotifyFlag);
         $("#hours").val(parseInt(obj.jzNotifyDuration));
-        $("#show-hours").val(parseInt(obj.jzNotifyDuration));
+        $("#show-hours").html(parseInt(obj.jzNotifyDuration));
         $("#google-search-enable").prop("checked", obj.jzGoogleSearchFlag);
         $("#show-selected-word").prop("checked", obj.jsShowSelectedWord);
         $("#theme").val(obj.jzTheme);
+
+        $('select').formSelect();
     }
 
     function updatePreviewComponents(){
@@ -90,10 +92,9 @@ $(function(){
     });
 
     chrome.storage.sync.get(['jzNotifyFlag', 'jzNotifyDuration', 'jzGoogleSearchFlag', 'jsShowSelectedWord', 'jzTheme'], function(res){
-        $('select').formSelect();
         $('.tooltipped').tooltip();
         $(("input[type=range]")).range();
-
+        
         updateDOM(res);
         
         for(var index in res){

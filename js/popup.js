@@ -8,12 +8,13 @@ $(function(){
     });
     
     chrome.storage.sync.get(['jzEnableFlag'], function(res){
-        $("#isEnable").attr("checked", res.jzEnableFlag);
-        $("#isEnable").on("change", function(){
+        $("#extension-state").attr("checked", res.jzEnableFlag);
+        $("#extension-state").on("change", function(){
             chrome.storage.sync.set({jzEnableFlag: $(this).is(":checked")});
         });
         setTimeout(function(){
-            $("#loader-container").hide();
+            $("#loader").hide();
+            $("#container").show();
         }, 500);
     });
 });

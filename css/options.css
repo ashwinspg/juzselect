@@ -29,3 +29,10 @@
     position: unset;
     z-index: unset;
 }
+
+#toast-container {
+    min-width: 10%;
+    top: 5%;
+    right: 50%;
+    transform: translateX(50%) translateY(50%);
+}
