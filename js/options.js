@@ -5,152 +5,94 @@ function isNull(value){
 var cacheData = {};
 
 $(function(){
-
-    function executeConditions(hours, minutes){
-        return (hours == 0 && minutes == 0) || (hours < 0 || hours > 23) || (minutes < 0 || minutes > 59) || isNaN(hours) || isNaN(minutes);
-    }
-
-    function isInValid(hours, minutes){
-        return executeConditions(hours, minutes) || executeConditions(parseInt(hours), parseInt(minutes));
-    }
-
-    function showAlert(){
-        alert (`
-            The notification duration should attain following criteria:
-                - hours and minutes should not be empty
-                - hours and minutes should not be 0
-                - hours and minutes should not be decimal values
-                - hours should be between 0 and 23
-                - minutes should be between 0 and 59
-        `);
-    }
-
-    function pad(d) {
-        return (d < 10) ? '0' + d.toString() : d.toString();
-    }
-
-    function updateDOM(obj){
-        var duration = parseInt(obj.juzselect_notifyDuration);
-        var hours = Math.floor(duration / 60);
-        var minutes = Math.floor(duration % 60);
-        $("#hours").val(pad(hours));
-        $("#minutes").val(pad(minutes));
-
-        $("#notifyDurationEnable").prop("checked", obj.juzselect_notifyDurationEnable);
-        $("#googleSearchEnable").prop("checked", obj.juzselect_googleSearchEnable);
-        $("#selectedWordEnable").prop("checked", obj.juzselect_selectedWordEnable);
-        $("#theme").val(obj.juzselect_theme);
+    function updateDOM(obj){        
+        $("#notify-duration-enable").prop("checked", obj.jzNotifyFlag);
+        $("#hours").val(parseInt(obj.jzNotifyDuration));
+        $("#show-hours").val(parseInt(obj.jzNotifyDuration));
+        $("#google-search-enable").prop("checked", obj.jzGoogleSearchFlag);
+        $("#show-selected-word").prop("checked", obj.jsShowSelectedWord);
+        $("#theme").val(obj.jzTheme);
     }
 
     function updatePreviewComponents(){
-        if(cacheData.juzselect_selectedWordEnable){
-            $("#juzselect-word").fadeIn();
+        if(cacheData.jzNotifyFlag){
+            $("#notify-duration-container").fadeIn();
         }else{
-            $("#juzselect-word").fadeOut();
+            $("#notify-duration-container").fadeOut();
         }
-        if(cacheData.juzselect_googleSearchEnable){
-            $("#juzselect-search").fadeIn();
+
+        if(cacheData.jsShowSelectedWord){
+            $("#jz-word").fadeIn();
         }else{
-            $("#juzselect-search").fadeOut();
+            $("#jz-word").fadeOut();
         }
-        if(cacheData.juzselect_notifyDurationEnable){
-            $("#notifyDurationContainer").fadeIn();
+
+        if(cacheData.jzGoogleSearchFlag){
+            $("#jz-search").fadeIn();
         }else{
-            $("#notifyDurationContainer").fadeOut();
+            $("#jz-search").fadeOut();
         }
-        if(cacheData.juzselect_theme == "Classic"){
-            $("#juzselect-popup").removeClass("dark");
+
+        if(cacheData.jzTheme == "Classic"){
+            $("#jz-popup").removeClass("dark");
         }else{
-            $("#juzselect-popup").addClass("dark");
+            $("#jz-popup").addClass("dark");
         }
     }
 
     function changeHandler(){
         var obj = {};
 
-        var hours = $("#hours").val();
-        var minutes = $("#minutes").val();
-        var duration;
-
-        if(isInValid(hours, minutes)){
-
-            duration = parseInt(cacheData.juzselect_notifyDuration);
-            hours = parseInt(duration / 60);
-            minutes = parseInt(duration % 60);
-            
-            $("#hours").val(pad(hours));
-            $("#minutes").val(pad(minutes));
-
-            showAlert();
-            return;
-        }
-
-        // removing integers
-        hours = parseInt(hours);
-        minutes = parseInt(minutes);
-        $("#hours").val(pad(hours));
-        $("#minutes").val(pad(minutes));
-        duration = (parseInt(hours) * 60) + (parseInt(minutes));
-
-        var notifyDurationEnable = $("#notifyDurationEnable").prop("checked");
-        var googleSearchEnable = $("#googleSearchEnable").prop("checked");
-        var selectedWordEnable = $("#selectedWordEnable").prop("checked");
-        var theme = $("#theme").val();
-
-        obj.juzselect_notifyDurationEnable = notifyDurationEnable;
-        obj.juzselect_notifyDuration = duration;
-        obj.juzselect_googleSearchEnable = googleSearchEnable;
-        obj.juzselect_selectedWordEnable = selectedWordEnable;
-        obj.juzselect_theme = theme;
+        obj.jzNotifyFlag = $("#notify-duration-enable").prop("checked");
+        obj.jzNotifyDuration = $("#hours").val();
+        obj.jzGoogleSearchFlag = $("#google-search-enable").prop("checked");
+        obj.jsShowSelectedWord = $("#show-selected-word").prop("checked");
+        obj.jzTheme = $("#theme").val();
 
         chrome.storage.sync.set(obj, function(){
-            if(cacheData.juzselect_notifyDuration != obj.juzselect_notifyDuration){
+            if(cacheData.jzNotifyDuration != obj.jzNotifyDuration){
                 chrome.runtime.sendMessage({todo: "changeDuration"});
             }
+
             for(var index in obj){
                 cacheData[index] = obj[index];
             }
             updatePreviewComponents();
-            $("#changesUpdated").html("Changes updated").fadeIn().fadeOut(1500);
+            M.toast({html: 'Changes Saved', displayLength: 2000})
         });
     }
 
-    $("#hours").spinner({
-        min: 0, 
-        max: 23,
-        change: changeHandler
-    });
-
-    $("#minutes").spinner({
-        min: 0, 
-        max: 59,
-        change: changeHandler
-    });
-
-    $("#notifyDurationEnable, #googleSearchEnable, #selectedWordEnable, #theme").on("change", changeHandler);
+    $("#notify-duration-enable, #hours, #google-search-enable, #show-selected-word, #theme").on("change", changeHandler);
+    $("#hours").on("input", function(){
+        $("#show-hours").html($("#hours").val())
+    })
 
     $("#restore-button").click(function(){
         var obj = {};
-        obj.juzselect_isEnable = true;
-        obj.juzselect_notifyDurationEnable = true;
-        obj.juzselect_notifyDuration = 5;
-        obj.juzselect_googleSearchEnable = true;
-        obj.juzselect_selectedWordEnable = true;
-        obj.juzselect_theme = 'Classic';
+        obj.jzEnableFlag = true;
+        obj.jzNotifyFlag = true;
+        obj.jzNotifyDuration = 1;
+        obj.jzGoogleSearchFlag = true;
+        obj.jsShowSelectedWord = true;
+        obj.jzTheme = 'Classic';
         chrome.storage.sync.set(obj, function(){
-            if(cacheData.juzselect_notifyDuration != obj.juzselect_notifyDuration){
+            if(cacheData.jzNotifyDuration != obj.jzNotifyDuration){
                 chrome.runtime.sendMessage({todo: "changeDuration"});
             }
+
             for(var index in obj){
                 cacheData[index] = obj[index];
             }
             updateDOM(obj);
             updatePreviewComponents();
-            $("#changesUpdated").html("Restored successfully").fadeIn().fadeOut(2000);
+            M.toast({html: 'Restored successfully', displayLength: 2000});
         });
     });
 
-    chrome.storage.sync.get(['juzselect_notifyDurationEnable', 'juzselect_notifyDuration', 'juzselect_googleSearchEnable', 'juzselect_selectedWordEnable', 'juzselect_theme'], function(res){
+    chrome.storage.sync.get(['jzNotifyFlag', 'jzNotifyDuration', 'jzGoogleSearchFlag', 'jsShowSelectedWord', 'jzTheme'], function(res){
+        $('select').formSelect();
+        $('.tooltipped').tooltip();
+        $(("input[type=range]")).range();
 
         updateDOM(res);
         
@@ -159,7 +101,8 @@ $(function(){
         }
         updatePreviewComponents();
         setTimeout(function(){
-            $("#loader-container").hide();
+            $("#loader").hide();
+            $("#container").show();
         }, 500);
     });
 });

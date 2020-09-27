@@ -1,4 +1,3 @@
-
 function dictionaryProcessor(selectedWord){
     return new Promise(function(resolve, reject){
         try{
@@ -17,7 +16,7 @@ function dictionaryProcessor(selectedWord){
 function juzselectProcessor(){
     return new Promise(function(resolve, reject){
         try{
-            chrome.storage.sync.get(['juzselect_isEnable', 'juzselect_googleSearchEnable', 'juzselect_selectedWordEnable', 'juzselect_theme'], function(res){
+            chrome.storage.sync.get(['jzEnableFlag', 'jzGoogleSearchFlag', 'jsShowSelectedWord', 'jzTheme'], function(res){
                 resolve(res);
             });
         }

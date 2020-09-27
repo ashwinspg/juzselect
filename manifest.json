@@ -25,7 +25,7 @@
       "match_about_blank": true,
       "all_frames": true,
       "run_at": "document_start",
-      "js": ["js/jquery.js", "js/content.js", "js/processor.js"],
+      "js": ["js/lib/jquery.js", "js/content.js", "js/processor.js"],
       "css": ["css/content.css"]
     }
   ],
