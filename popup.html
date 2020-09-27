@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>juzselect extension - popup</title>
-        <script src="js/jquery.js"></script>
+        <title>Popup</title>
+
+        <script src="js/lib/jquery.js"></script>
         <script src="js/popup.js"></script>
+
+        <link rel="stylesheet" href="css/lib/materialize.min.css">
         <link rel="stylesheet" type="text/css" href="css/popup.css" />
-        <link rel="stylesheet" type="text/css" href="css/common.css" />
     </head>
     <body>
-        <div class="options">
+        <div id="loader" class="progress">
+            <div class="indeterminate"></div>
+        </div>
+        <div id="container" class="options" style="display: none;">
             <div class="options-1">
-                <span class="options-text">Enable Extension</span>
-                <label class="switch">
-                <input type="checkbox" id="isEnable" />
-                <span class="slider round"></span>
-                </label>
+                <span class="options-text">Extension State</span>
+                <div class="switch">
+                    <label>
+                        Off
+                        <input type="checkbox" id="extension-state">
+                        <span class="lever"></span>
+                        On
+                    </label>
+                </div>
             </div>
             <div class="options-2" id="juzselect-options">
-                <span class="options-text">More options</span>
+                <span class="options-text">Settings</span>
             </div>
-        </div>
-        <div id='loader-container'>
-            <div class="loader"></div>
         </div>
     </body>
 </html>

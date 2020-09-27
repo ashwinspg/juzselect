@@ -7,13 +7,14 @@ $(function(){
         chrome.tabs.create({'url': "/options.html" });
     });
     
-    chrome.storage.sync.get(['juzselect_isEnable'], function(res){
-        $("#isEnable").attr("checked", res.juzselect_isEnable);
-        $("#isEnable").on("change", function(){
-            chrome.storage.sync.set({juzselect_isEnable: $(this).is(":checked")});
+    chrome.storage.sync.get(['jzEnableFlag'], function(res){
+        $("#extension-state").attr("checked", res.jzEnableFlag);
+        $("#extension-state").on("change", function(){
+            chrome.storage.sync.set({jzEnableFlag: $(this).is(":checked")});
         });
         setTimeout(function(){
-            $("#loader-container").hide();
+            $("#loader").hide();
+            $("#container").show();
         }, 500);
     });
 });
